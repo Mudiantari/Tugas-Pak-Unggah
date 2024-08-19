@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail identitas siswa</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>DETAIL SISWA</h1>
+    <h3>Kelompok CILDI</h3>
+    <div class="container">
+        <div class="siswa">
+            <img src="images/img mudi.jpg" alt="Siswa 1">
+            <button onclick="DetailSiswa('details1')">Detail Siswa 1</button>
+            <div id="details1" class="details">
+                <table>
+                    <tr>
+                        <th>Nis</th>
+                        <td>31516</td>
+                    </tr>
+                    <tr>
+                        <th>Nama</th> 
+                        <td>Ni Luh Putu Mudiantari</td>
+                    </tr>
+                    <tr>
+                        <th>Kelas</th> 
+                        <td>XI RPL 2</td>
+                    </tr>
+                    <tr>
+                        <th>Alamat</th> 
+                        <td>Jl. Diponegoro Gg: IV No: 12</td>
+                    </tr>
+                    <tr>
+                        <th>tempat, tanggal lahir</th> 
+                        <td>denpasar, 07 Juli 2008</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="siswa">
+            <img src="images/img lin.jpg" alt="Siswa 2">
+            <button onclick="DetailSiswa('details2')">Detail Siswa 2</button>
+            <div id="details2" class="details">
+                <table>
+                    <tr>
+                        <th>Nis</th>
+                        <td>31517</td>
+                    </tr>
+                    <tr>
+                       <th>Nama</th>
+                       <td>NI Made Lin Listiana</td>
+                    </tr>
+                    <tr>
+                        <th>kelas</th>
+                        <td>XI RPL 2</td>
+                    </tr>
+                    <tr>
+                        <th>Alamat</th>
+                        <td>Jl. Trenggana No: 142, Penatih</td>
+                    </tr>
+                    <tr>
+                        <th>Tempat, tanggal lahir</th>
+                        <td>Denpasar, 18 Juli 2008</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="siswa">
+            <img src="images/img citra.jpg" alt="Siswa 3">
+            <button onclick="DetailSiswa('details3')">Detail Siswa 3</button>
+            <div id="details3" class="details">
+                <table>
+                    <tr>
+                        <th>Nis</th>
+                        <td>31520</td>
+                    </tr>
+                    <tr>
+                       <th>Nama</th>
+                       <td>Ni Wayan Citra Lestari</td>
+                    </tr>
+                    <tr>
+                        <th>Kelas</th>
+                        <td>XI RPL 2</td>
+                    </tr>
+                    <tr>
+                        <th>Alamat</th>
+                        <td>Jl. Antasura Banjar Pondok</td>
+                    </tr>
+                    <tr>
+                        <th>Tempat, tanggal lahir</th>
+                        <td>Denpasar, 09 Februari 2008</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        function DetailSiswa(id) {
+            var details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display= "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+body {
+    font-family:Arial, Helvetica, sans-serif; /*untuk mengatur jenis font semua teks di body*/
+    background: linear-gradient(to right, #CD5C08, #FFF5E4);
+}
+
+h1, h3 {
+    text-align: center;
+    font-weight: bold; /* Membuat teks tebal */
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5); /* Menambahkan bayangan teks */
+}
+
+.container {
+    display:  flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.siswa {
+    text-align: center;
+}
+
+.siswa img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.siswa button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: aqua;
+    color: white;
+    border:none;
+    border-radius:  5px;
+    cursor: pointer;
+}
+
+.siswa button:hover {
+    background-color: #0056b3;
+}
+
+.details {
+    display: none;
+    margin-top: 10px;
+}
+
+.details table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.details th, .details td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.details th {
+    background-color: #f2f2f2;
+}
